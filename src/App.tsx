@@ -47,6 +47,9 @@ export function Home() {
         <ALink
           textColor="blue"
           href="https://nvd.nist.gov/vuln/detail/CVE-2020-27252"
+          textDecoration="underline"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Reference from NVD.
         </ALink>
@@ -83,7 +86,8 @@ export function Description() {
           adjust the device remotely. This is obviously a very good idea, as
           having to pull the pacemaker out of the patient every time it needs to
           be adjusted would be very inconvenient. However, this also introduces
-          a new attack vector: the <strong>wireless communication channel</strong>.
+          a new attack vector: the{" "}
+          <strong>wireless communication channel</strong>.
         </Text>
 
         <Button onClick={() => toLinkAndScrollUp(navigate, "/vuln")}>
@@ -102,7 +106,7 @@ export function VulnDescription() {
       <VStack maxW="66vw">
         <Heading size="lg">Time-of-Check, Time-of-Use</Heading>
         <Text>
-          The vulnerabiity existed because of something called a&nbsp;
+          CVE-2020-27252 existed because of something called a&nbsp;
           <strong>time-of-check time-of-use</strong> weakness. This sort of
           vulnerability arises when a program checks the state of a resource
           (such as a file or a network connection) and then uses that resource
@@ -483,7 +487,12 @@ export function Impact() {
         <Text as="i">
           Created by Ethan Hanlon for CSC 699 at San Francisco State University.
         </Text>
-        <ALink href="https://github.com/OccultSlolem/GatorMed">
+        <ALink
+          textColor="blue"
+          href="https://github.com/OccultSlolem/GatorMed"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           View source code on GitHub
         </ALink>
 
